@@ -1,3 +1,5 @@
+/*      version 4v   */
+
 * {
   font-family: Helvetica;
   font-size: 22px;
@@ -9,6 +11,7 @@
   text-align: center;
   box-sizing: border-box;
 }
+
 /*  no changes to menu-container links or scriptcozy or span --*/
 .menu-container {
   /* padding: 20px 0; */
@@ -47,7 +50,7 @@ span {
     border: blue
     /*justify-content: center; */
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-    background-color: black; 
+    background-color: black;
     align-items: center;
   }
 
