@@ -68,16 +68,6 @@ span {
   margin: 70px auto;
 }
 
-
-
-.photo-grid-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-  margin: 70px auto;
-}
-
 .photo-banner {
    display: flex;
    /*flex-direction: column;*/
@@ -87,13 +77,13 @@ span {
    width: 1200px;
 }
 
-.photo-grid-container img{
-  height: 200px;
-  width: 300px
-  margin: 10px ;
-
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 70px auto;
 }
-
 
 .photo-grid-item {
       display: flex;
@@ -104,6 +94,16 @@ span {
       overflow: hidden;
       margin: 70px auto;
 }
+
+.photo-grid-container img{
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+
+}
+
+
+
 
 /* -------- locations css ------------------------------------*/
 .locations {
