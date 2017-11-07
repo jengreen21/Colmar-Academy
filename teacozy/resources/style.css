@@ -50,6 +50,7 @@ span {
     /*justify-content: center; */
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
     background-color: black;
+    background-size: cover;
     align-items: center;
   }
 
@@ -95,10 +96,11 @@ span {
       margin: 70px auto;
 }
 
-.photo-grid-container img{
+.photo-grid-item img { 
   height: 200px;
   width: 300px;
   margin: 10px;
+  justify-content: space-around;
 
 }
 
