@@ -64,11 +64,9 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
-  margin: 70px auto;
+/*  width: 1000px;  */
+/*  margin: 70px auto; */
 }
-
-
 
 .photo-grid-container {
   display: flex;
@@ -79,29 +77,23 @@ span {
 }
 
 .photo-banner {
-   display: flex;
-   /*flex-direction: column;*/
-   justify-content: center;
-   align-items: center;
-   background-color: black;
-   width: 1200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: black;
+ width: 1200px;
 }
 
-.photo-grid-container img{
-  height: 200px;
-  width: 300px
-  margin: 10px ;
+/*.photo-grid-container img{height: 200px;width: 300px;  margin: 10px;  */
 
-}
 
 
 .photo-grid-item {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      height: 200px;
-      overflow: hidden;
+      width: 1000px;
       margin: 70px auto;
 }
 
