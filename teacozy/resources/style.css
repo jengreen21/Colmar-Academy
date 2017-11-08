@@ -117,27 +117,35 @@ span {
   text-align: center;
 }
 
+#locations .places {
+  width: 1100px;
+  margin: auto;
+}
+
+.places .address {
+  padding-top: 5px;
+}
+
 .places {
   display: flex;
-  justify-content: space-around;
-  margin: 15px 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 .address {
-  display: flex;
-  align-items: center;
-  margin: 0 20px;
-  height: 300px;
-  width: 300px;
-  padding: 40px 40px;
   opacity: 1;
-}
-
-.content {
+  background-color: black;
+  flex-basis: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin: 5px 20px;
+  padding: 10px;
+  color: white;
+
 }
+
 
 
 
@@ -153,4 +161,5 @@ span {
 
 footer {
       color: seashell;
+
 }
