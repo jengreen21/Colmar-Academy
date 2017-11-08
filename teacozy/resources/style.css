@@ -12,9 +12,7 @@
 }
 
 /*  tea cozy top navigation and logo   */
-/*  no changes to menu-container links or scriptcozy or span --*/
 .menu-container {
-  /* padding: 20px 0; */
   display: flex;
   border-bottom: 1px solid seashell;
   height: 69px;
@@ -24,9 +22,8 @@
 
 
 .links {
-  /*border: 2px dotted yellow;  for debugging*/
   display: flex;
-  align-items: center;        /* places the links in vertical center in menucont*/
+  align-items: center;
   justify-content: space-between;
   font-size: 30px;
   text-decoration: underline;
@@ -34,7 +31,6 @@
 
 .scriptcozy {
     display: flex;
-    /*justify-content: flex-start;   default value not needed */
     font-size: 50px;
     padding: 0 10px;
   }
@@ -115,6 +111,8 @@ span {
   height: 500px;
   padding-top: 70px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #locations .places {
@@ -128,8 +126,9 @@ span {
 
 .places {
   display: flex;
+  height: 280px;
   justify-content: center;
-  flex-wrap: wrap;
+  background: transparent;
 }
 
 
@@ -139,14 +138,15 @@ span {
   flex-basis: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 5px 20px;
   padding: 10px;
   color: white;
-
+  justify-content: space-evenly;
 }
 
-
+#locations h2 {
+  background: transparent;
+}
 
 
 /*----------------CSS Footer --------------------------------*/
@@ -160,6 +160,11 @@ span {
 }
 
 footer {
-      color: seashell;
+  display: flex;
+  color: seashell;
+  justify-content:flex-start;
+}
 
+span {
+  padding 0 20px; 
 }
