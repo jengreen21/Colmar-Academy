@@ -1,0 +1,177 @@
+/* Universal styling  */
+body, html {
+  color: grey;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Styling for Colmar  logo + nav banner at top of page  */
+
+
+.logo_bar {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 8px 24px;
+  text-align: center;
+  height: 64px;
+
+}
+
+logo {
+  display: infline-flex;
+  justify-content: flex-start;
+  height: 32px;
+  align-items: center;
+}
+
+
+/* Styling for nav on right hand side of top navigation bar     */
+.desktop_nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 8px 0;
+  justify-content: flex-end;
+  font-weight; 500;
+  color: grey;
+  height: 400px;
+  transition: all 0.5s linear;
+
+}
+
+
+desktop_nav hover {
+  text-shadow: 1px 1px 1px #7d7984;
+  font-size: 1.2rem;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .mobile-top-nav {
+    /* On small screens, we are no longer using row direction but column */
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+  }
+}
+/* Syling for hero image with motor cycle+ black box  */
+.hero {
+  display: flex;
+  max-width: 100%;
+  height: 300px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-color: black;
+  background-size: cover;
+  align-items: center;
+}
+
+/* Styling for New Arrival black box   */
+.blackbox {
+  background-color: black;
+  display: inline;
+  color: #fff;
+  padding: 0.5rem;
+  margin-right: 3rem;
+}
+
+
+/* Red nav bar                         */
+.
+
+
+
+
+
+nav a {
+  color: white;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #DBE9EE;
+}
+/*---------  3 photo flex containers  ------------------------------  */
+/*---------  1st photo container  ------------------------------  */
+
+.banner {
+  display: infline-flex;
+  width: 100%;
+  background-color: grey;
+  justify-content: row;
+}
+
+.banner img  {
+  width: 60%;
+  max-height: 500px;
+  padding: 32px 24px;
+}
+
+
+.banner-text  {
+  display: inline-flex;
+  height: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: transparent;
+}
+
+.banner-text h1 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;  /* Green */
+  color: white;
+  padding: 8px 0;
+  transition: all 0.5s linear;
+}
+
+.button hover {
+  background-color:
+}
+
+/* footer css  */
+footer {
+  display: infline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 2px solid white;
+  background-color: white;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 60%;
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: flex-start;
+  height: 32px;
+}
+
+footer a {
+  justify-content: flex-end;
+}
