@@ -25,20 +25,21 @@ h1, h2, h3 {
   margin: 8px 24px;
   text-align: center;
   height: 64px;
+  flex-direction: row;
 
 }
 
-logo {
+/*logo {
   display: infline-flex;
   justify-content: flex-start;
   height: 32px;
   align-items: center;
-}
+} */
 
 
 /* Styling for nav on right hand side of top navigation bar     */
-.desktop_nav ul {
-  display: inline-flex;
+.desktop_nav a {
+  display: inline-block;
   flex-direction: row;
   padding: 8px 0;
   justify-content: flex-end;
@@ -76,31 +77,10 @@ desktop_nav hover {
   align-items: center;
 }
 
-/* Styling for New Arrival black box   */
-.blackbox {
-  background-color: black;
-  display: inline;
-  color: #fff;
-  padding: 0.5rem;
-  margin-right: 3rem;
-}
-
-
-/* Red nav bar                         */
-.
 
 
 
 
-
-nav a {
-  color: white;
-  font-size: 16px;
-}
-
-nav a:hover {
-  color: #DBE9EE;
-}
 /*---------  3 photo flex containers  ------------------------------  */
 /*---------  1st photo container  ------------------------------  */
 
@@ -147,23 +127,18 @@ nav a:hover {
 }
 
 /* footer css  */
-footer {
-  display: infline-flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
-  border-top: 2px solid white;
-  background-color: white;
-}
+
 .footer {
     position: fixed;
+    align-items: center;
+    justify-content: space-between;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: white;
     color: black;
     text-align: center;
-    width: 60%;
+    padding: 16px 24px;
 }
 
 .footer {
@@ -172,6 +147,6 @@ footer {
   height: 32px;
 }
 
-footer a {
+.footer a {
   justify-content: flex-end;
 }
