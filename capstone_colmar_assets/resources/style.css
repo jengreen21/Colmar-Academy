@@ -26,32 +26,31 @@ h1, h2, h3 {
   text-align: center;
   height: 64px;
   flex-direction: row;
-
 }
 
-/*logo {
-  display: infline-flex;
+.logo {
+  display: inline-flex;
   justify-content: flex-start;
   height: 32px;
   align-items: center;
-} */
+  font-size: 1.5rem;
+  font-weigt: bold;
+}
 
 
 /* Styling for nav on right hand side of top navigation bar     */
 .desktop_nav a {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   padding: 8px 0;
   justify-content: flex-end;
   font-weight; 500;
-  color: grey;
   height: 400px;
-  transition: all 0.5s linear;
 
 }
 
 
-desktop_nav hover {
+.desktop_nav hover {
   text-shadow: 1px 1px 1px #7d7984;
   font-size: 1.2rem;
 }
@@ -59,29 +58,149 @@ desktop_nav hover {
 /* Small screens */
 @media all and (max-width: 500px) {
   .mobile-top-nav {
-    /* On small screens, we are no longer using row direction but column */
+    /* On small mobile screens, we are no longer using row direction but column */
     display: flex;
     flex-direction: row;
-
     align-content: center;
   }
 }
-/* Syling for hero image with motor cycle+ black box  */
-.hero {
-  display: flex;
-  max-width: 100%;
-  height: 300px;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
-  background-color: black;
-  background-size: cover;
-  align-items: center;
-}
+
 
 
 
 
 
 /*---------  3 photo flex containers  ------------------------------  */
+.page-60-40-grey-container {
+  display: flex;
+  width: 100%;
+  background-color: #E8ECF0;
+}
+
+.page-60-40-white-container {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.left-container {
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column;
+  margin: 32px 24px;
+}
+
+
+.left-container img {
+  max-height: 400px;
+}
+
+.left-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.left-container video{
+  height: 400px;
+}
+
+
+.left-container h1 {
+  font-size: 2rem;
+
+}
+
+.right-container {
+  display: inline-flex;
+  width: 40%;
+  flex-direction: column;
+  border-left: 2px solid #dddddd;
+  padding-bottom: 32px;
+  padding-left: 24px;
+}
+
+.right-container-banner {
+  display: inline-flex;
+  width: 40%;
+  flex-direction: column;
+  border-left: 2px solid #dddddd;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  align-items: center;
+  align-content: center;
+
+}
+
+
+
+.right-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+
+.information {
+  display: inline-flex;
+  border-bottom: 3px solid #dddddd;
+  overflow:hidden;
+}
+
+
+
+.information img {
+  display: flex;
+  height: auto;
+/*  flex-grow:0.35;  */
+  width: 35%;
+/* max-height: 200px; */
+  padding: 16px;
+
+
+}
+
+
+.information-text {
+  display: inline-flex;
+  width: 65%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+.information-text h3 {
+  padding: 4px;
+  margin: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+.information-text p {
+  padding: 4px;
+  margin: 4px;
+
+}
+
+
+.information a {
+  color: #3694d9;
+  transition: all 150ms linear 150ms;
+}
+
+.information a:hover {
+  color: #f0961b;
+}
+
+
+.author {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 /*---------  1st photo container  ------------------------------  */
 
 .banner {
@@ -109,6 +228,9 @@ desktop_nav hover {
 .banner-text h1 {
   color: black;
   font-size: 1.5rem;
+  font-weight: bold;
+
+
 }
 
 .button {
@@ -118,13 +240,99 @@ desktop_nav hover {
   text-decoration: none;
   background-color: #4CAF50;  /* Green */
   color: white;
-  padding: 8px 0;
+  padding: 16px 0;
   transition: all 0.5s linear;
 }
 
 .button hover {
   background-color:
 }
+/* ---------------------Start Learning Course CSS---------------------------------- */
+
+.page-grey-container {
+  display: flex;
+  width: 100%;
+  background-color: #E8ECF0;
+  padding: 32px 72px;
+}
+
+.page-grey-container h1 {
+  display: inline-flex;
+  align-content: center;
+  font-size:2rem;
+  font-weight: bold;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.course-section {
+display: inline-flex;
+flex-flow: wrap;
+margin: 0 72px;
+}
+
+
+.course {
+display: inline-flex;
+flex-direction: column;
+background-color: white;
+margin: 16px;
+max-width: 30%;
+text-align: left;
+}
+
+
+.course img {
+padding-bottom: 24px;
+height: auto;
+}
+
+
+.course h3 {
+margin-left: 16px;
+padding-left: 16px;
+font-size: 1.5rem;
+font-weight: bold;
+color: darkgrey;
+}
+
+
+.course p {
+font-weight: normal;
+padding: 4px 16px;
+margin: 4px 16px;
+}
+
+
+.course p:last-child {
+padding-bottom: 24px;
+}
+
+/* Video css   */
+.video-content-container {
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+
+.video-content-container h2:first-of-type {
+  text-align: center;
+}
+
+
+.video-content-container .information:first-child {
+  background-color: #dddddd;
+}
+
+
+.video-content-container .information:last-child {
+  background-color: #f9f9f9;
+  border: none;
+}
+
+
 
 /* footer css  */
 
@@ -147,6 +355,11 @@ desktop_nav hover {
   height: 32px;
 }
 
-.footer a {
+.bottom_nav {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
   justify-content: flex-end;
+  font-weight; 500;
+  height: 400px;
 }
